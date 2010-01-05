@@ -3,7 +3,8 @@
 require 'nota-fiscal'
 require 'firma-default'
 
-nota_fiscal = NotaFiscal.new(ARGV[0].to_f, FIRMA_DEFAULT)
+firma = FIRMAS[ARGV[1]] || FIRMA_DEFAULT
+nota_fiscal = NotaFiscal.new(ARGV[0].to_f, firma)
 
 puts
 puts "----- NOTA FISCAL -----"
