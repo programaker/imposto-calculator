@@ -41,15 +41,6 @@ class Firma
         @nome, @endereco, @municipio, @estado, @cep, @cnpj, @inscricao_municipal_estadual = 
             nome, endereco, municipio, estado, cep, cnpj, inscricao_municipal_estadual
     end
-    
-    def self.ideais
-        self.new(
-            'Ideais Tecnologia Ltda', 
-            'rua da Assembléia 98, 9º andar, centro',
-            'Rio de Janeiro', 'RJ', '20011-000',
-            '03.789.968/0001-37', '277.040-7'
-        )
-    end
 end
 
 
